@@ -19,9 +19,9 @@ const App = () => {
 
   return (
     <>
-    <StatusBar backgroundColor='#000'/>
+    <StatusBar backgroundColor={randomBackground}/>
       <View style={[styles.container, {backgroundColor: randomBackground}]}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={generateColor}>
           <View style={styles.actionBtn}>
             <Text style={styles.actionBtnText}>Press me</Text>
           </View>
